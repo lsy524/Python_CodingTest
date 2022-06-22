@@ -1,2 +1,2 @@
-# CodeUp_Python100
+# CodeUp_Python
 CodeUp Python basics 100th
