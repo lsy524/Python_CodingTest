@@ -1,2 +1,3 @@
-# CodeUp_Python
-CodeUp Python basics 100th
+### CodeUp Python
+
+> CodeUp basics Solutions in Python
