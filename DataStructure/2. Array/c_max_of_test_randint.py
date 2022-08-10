@@ -1,7 +1,7 @@
 # 배열 원소의 최댓값을 구해서 출력(원솟값을 난수로 생성 및 max 파일에서 max_of 함수 가져옴)
 
 import random
-from max import max_of 
+from a_max import max_of 
 
 
 num = int(input("radom elements : "))
