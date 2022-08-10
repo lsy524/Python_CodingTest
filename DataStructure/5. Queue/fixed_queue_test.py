@@ -3,6 +3,7 @@ from fixed_queue import FixedQueue
 
 Menu = Enum("Menu", ["enqueue", "dequeue", "peek", "find", "dump", "cancle"])
 
+# 메뉴 선택 
 def select_menu():
     s = [f"({m.value}){m.name}" for m in Menu]
     while True :
@@ -11,12 +12,13 @@ def select_menu():
         if n >= 1 and n <= len(Menu):
             return Menu(n)
 
-q = FixedQueue(64)
+q = FixedQueue(64)  # 최대 64개를 인큐할 수 있는 큐 
 
 while True :
     print(f"Current data : {len(q)} / {q.capacity}")
     m = select_menu()
 
+    # enqueue
     if m == Menu.enqueue :
         x = int(input("enqueue data : "))
         try :
@@ -24,6 +26,7 @@ while True :
         except FixedQueue.Full:
             print("Queue is Full")
     
+    # dequeue 
     elif m == Menu.dequeue :
         try :
             x =  q.dequeue()
@@ -31,6 +34,7 @@ while True :
         except FixedQueue.Empty :
             print("Queue is Empty")
 
+    # peek
     elif m == Menu.peek :
         try :
             x =  q.peek()
@@ -38,6 +42,7 @@ while True :
         except FixedQueue.Empty :
             print("Queue is Empty")
 
+    # find 
     elif m == Menu.find :
         x = int(input("find data : "))
         if x in q :
@@ -45,9 +50,11 @@ while True :
         else :
             print("No data")
     
+    # dump 
     elif m == Menu.dump:
         q.dump()
     
+    # cancle
     else :
         print("End")
         break
