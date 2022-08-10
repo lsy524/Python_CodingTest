@@ -1,4 +1,4 @@
-
+# 셰이커 정렬 알고리즘 구현 
 
 def shaker_sort(data):
     left = 0
