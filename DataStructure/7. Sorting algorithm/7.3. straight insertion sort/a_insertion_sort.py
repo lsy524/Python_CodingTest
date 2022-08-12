@@ -25,5 +25,5 @@ for i in range(num):
 
 insertion_sort(x)
 
-for i in range(len(x)):
+for i in range(num):
     print(f"x[{i}] = {x[i]}")
