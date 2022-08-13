@@ -1,3 +1,5 @@
+# 퀵 정렬 알고리즘 구현 
+
 def qsort(a, left, right):
     pl = left
     pr = right 
