@@ -1,5 +1,5 @@
 stack = []
-# 5 2 3 7 , 4 1 , 
+
 stack.append(5) # 삽입(5)
 stack.append(2) # 5 - 삽입(2)
 stack.append(3) # 5 - 2 - 삽입(3)
