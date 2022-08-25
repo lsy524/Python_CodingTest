@@ -4,6 +4,7 @@ d = [0] * 100 # 한 번 계산된 결과를 메모제이션하기 위한 리스�
 
 # 피보나치 함수를 재귀함수로 구현(탑다운)
 def fibo(x):
+    print(f"f({x})", end=" ")
     # 종료 조건(1 혹은 2일 때 1 반환)
     if x == 1 or x == 2 :
         return 1 
@@ -17,4 +18,4 @@ def fibo(x):
 
     return d[x]
 
-print(fibo(99))
+print(fibo(6))
